@@ -5,12 +5,14 @@ const navToggle = document.getElementById('navToggle');
 const navMenu = document.getElementById('navMenu');
 
 if (navToggle && navMenu) {
+  navToggle.setAttribute('aria-expanded', 'false');
   navToggle.addEventListener('click', () => {
     const navList = navMenu.querySelector('.nav__list');
-    navList.classList.toggle('open');
+    const isOpen = navList.classList.toggle('open');
     navToggle.setAttribute(
       'aria-label',
-      navList.classList.contains('open') ? 'Close navigation menu' : 'Open navigation menu'
+      isOpen ? 'Close navigation menu' : 'Open navigation menu'
     );
+    navToggle.setAttribute('aria-expanded', isOpen);
   });
 }
