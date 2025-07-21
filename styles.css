@@ -105,9 +105,13 @@ body {
     box-shadow: 0 4px 16px rgba(0,0,0,0.07);
     padding: 1rem 0;
     gap: 0;
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.3s;
   }
   .nav__list.open {
+    visibility: visible;
+    opacity: 1;
     display: flex;
   }
   .nav__link {
