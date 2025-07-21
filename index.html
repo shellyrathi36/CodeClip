@@ -1,15 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CodeClip</title>
-    <script
-  src="https://js.sentry-cdn.com/8994bf86fecf7733832520db1565ab1f.min.js"
-  crossorigin="anonymous"
-></script>
-  </head>
-  <body>
-    
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeClip</title>
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img width="200px" src="/assets/logo.png" alt="codeclip logo">
+      <!-- <span>CodeClip</span> -->
+    </div>
+    <nav class="nav-links" id="navlink">
+      <a href="index.html">Home</a>
+      <a href="/pages/challenges.html">Challenges</a>
+      <a href="/pages/editor.html">Editor</a>
+      <a href="/pages/profile.html">Profile</a>
+    </nav>
+    <div class="hamburger" id="ham">
+      &#9776;
+    </div>
+  </header>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Master Coding Challenges with CodeClip</h1>
+      <p>Your lightweight, Offline-friendly vault to solve, run, and share code — built for developers, by developers.
+      </p>
+      <div class="cta-buttons">
+        <a href="/pages/challenges.html" class="btn primary">Start Solving</a>
+        <a href="/pages/editor.html" class="btn secondary">Try Editor</a>
+      </div>
+    </div>
+    <div class="hero-graphic">
+      <img width="400px" src="/assets/Programming-pana.svg" alt="Hero graphic" />
+    </div>
+  </section>
+  <script src="scripts/app.js"></script>
+</body>
+
 </html>
