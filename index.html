@@ -258,12 +258,22 @@
           challenges.forEach((challenge) => {
             const card = document.createElement("div");
             card.className = "challenge-card";
-            card.innerHTML = `
-              <h3>${challenge.title}</h3>
-              <p><strong>Language:</strong> ${challenge.language}</p>
-              <p><strong>Difficulty:</strong> ${challenge.difficulty}</p>
-              <p><strong>Status:</strong> ${challenge.status}</p>
-            `;
+            const title = document.createElement("h3");
+            title.textContent = challenge.title;
+
+            const language = document.createElement("p");
+            language.innerHTML = `<strong>Language:</strong> ${challenge.language}`;
+
+            const difficulty = document.createElement("p");
+            difficulty.innerHTML = `<strong>Difficulty:</strong> ${challenge.difficulty}`;
+
+            const status = document.createElement("p");
+            status.innerHTML = `<strong>Status:</strong> ${challenge.status}`;
+
+            card.appendChild(title);
+            card.appendChild(language);
+            card.appendChild(difficulty);
+            card.appendChild(status);
             challengesContainer.appendChild(card);
           });
         };
