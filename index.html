@@ -1,39 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CodeClip</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitcount:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitcount:wght@100..900&family=Oooh+Baby&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/main.css">
-    <script
-  src="https://js.sentry-cdn.com/8994bf86fecf7733832520db1565ab1f.min.js"
-  crossorigin="anonymous"
-></script>
-  </head>
-  <body>
-    <!-- Navigation bar -->
-    <div id="navbar"></div>
 
-    <!-- Hero section -->
-    <div id="hero-section">
-      <div class="bars-container">
-        <div class="bar red"></div>
-        <div class="bar green"></div>
-        <div class="bar yellow"></div>
-        <div class="bar blue"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeClip</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount:wght@100..900&family=Oooh+Baby&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="./styles/themes.css" />
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Sentry Script -->
+  <script src="https://js.sentry-cdn.com/8994bf86fecf7733832520db1565ab1f.min.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  
+<div id="navbar">
+  <!-- Header Component Start -->
+  <header class="header">
+    <div class="container header__container">
+      <div class="header__logo">
+        <span class="logo-text">CodeClip</span>
       </div>
+      <nav class="header__nav" id="navMenu">
+        <ul class="nav__list">
+          <li><a href="#" class="nav__link">Home</a></li>
+          <li><a href="#" class="nav__link">Challenges</a></li>
+          <li><a href="#" class="nav__link">Editor</a></li>
+          <li><a href="#" class="nav__link">Profile</a></li>
+        </ul>
+      </nav>
+      <p id="theme-toggle">Toggle Theme</p>
+      <button class="header__toggle" id="navToggle" aria-label="Open navigation menu">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </header>
+  <!-- Header Component End -->
+ </div> 
 
-      <h1>Code-Clip</h1>
-      <h3>--- A tiny playground for your giant ideas</h3>
+  <!-- Hero section -->
+  <div id="hero-section">
+    <div class="bars-container">
+      <div class="bar red"></div>
+      <div class="bar green"></div>
+      <div class="bar yellow"></div>
+      <div class="bar blue"></div>
     </div>
 
-    <!-- Footer -->
-    <div id="footer"></div>
-  </body>
+    <h1>Code-Clip</h1>
+    <h3>--- A tiny playground for your giant ideas</h3>
+  </div>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+
+  <!-- Scripts -->
+  <script src="scripts/app.js"></script>
+  <script src="./scripts/theme.js"></script>
+</body>
+
 </html>
